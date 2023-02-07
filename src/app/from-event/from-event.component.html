@@ -1,0 +1,16 @@
+<rxjs-operator-content
+  [title]="title"
+  [text]="text"
+>
+  <ul
+    #ulListGroup
+    class="list-group"
+  >
+    <p>Generated List:</p>
+  </ul>
+  <button
+    class="btn btn-primary"
+    #btnGenerate
+    (click)="generateLiElement()"
+  >Generate</button>
+</rxjs-operator-content>

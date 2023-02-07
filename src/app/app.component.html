@@ -1,0 +1,40 @@
+<div
+  class="d-flex"
+  id="wrapper"
+>
+  <!-- Sidebar -->
+  <div
+    class="d-flex flex-column flex-shrink-0 p-3 text-white bg-gray"
+    style="width: 280px;height: 100vh;"
+  >
+    <a
+      routerLink="/operators"
+      class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-white text-decoration-none"
+    >
+      <span class="fs-5">Operators</span>
+    </a>
+    <hr>
+    <ul class="nav flex-column mb-auto h-100">
+      <li
+        *ngFor="let operator of data"
+        class="nav-item"
+      >
+        <a
+          [routerLink]="'/operators/'+operator.title"
+          [state]="{ title: operator.title, text: operator.text }"
+          class="nav-link text-red"
+        >
+          {{operator.title}}
+        </a>
+      </li>
+    </ul>
+  </div>
+  <!-- /#sidebar-wrapper -->
+  <!-- Page Content -->
+  <div id="page-content-wrapper">
+    <div class="container-fluid">
+      <router-outlet></router-outlet>
+    </div>
+  </div>
+  <!-- /#page-content-wrapper -->
+</div>

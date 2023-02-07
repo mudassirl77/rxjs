@@ -1,0 +1,10 @@
+<rxjs-operator-content
+  [title]="title"
+  [text]="text"
+>
+  <ul class="list-group">
+    <p>Presenter:</p>
+    <li class="list-group-item list-group-item-primary">name: {{(presenter$ | async).name}}</li>
+    <li class="list-group-item list-group-item-primary">role: {{(presenter$ | async).role}}</li>
+  </ul>
+</rxjs-operator-content>

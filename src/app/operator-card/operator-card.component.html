@@ -1,0 +1,15 @@
+<div class="col">
+  <div class="card">
+    <div class="card-header">
+      <strong>{{title}}</strong>
+    </div>
+    <div class="card-body">
+      <p class="card-text">{{text}}</p>
+      <a
+        [routerLink]="'/operators/'+title"
+        [state]="{ title: title, text: text }"
+        class="stretched-link"
+      ></a>
+    </div>
+  </div>
+</div>

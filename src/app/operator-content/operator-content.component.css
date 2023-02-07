@@ -1,0 +1,9 @@
+.blockquote {
+  margin-left: 0px;
+  padding-left: 20px;
+  font-style: italic;
+  box-shadow: inset 3px 0 0 0 rgb(22 29 24 / 75%);
+}
+.image-size {
+  max-height: 400px;
+}

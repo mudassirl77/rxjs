@@ -1,0 +1,19 @@
+<div class="card mt-3">
+  <div class="card-body">
+    <h4 class="card-title">{{title}}</h4>
+    <p class="blockquote">{{text}}</p>
+    <img *ngIf="showImage"
+      src="../../assets/{{title}}.png"
+      class="card-img-bottom image-size"
+      alt=""
+    >
+    <h6 *ngIf="notes" class="card-title">Notes / Usage</h6>
+    <p class="card-text">
+      <ng-content select="notes"></ng-content>
+    </p>
+    <h6 class="card-title">Example</h6>
+    <p class="card-text">
+      <ng-content></ng-content>
+    </p>
+  </div>
+</div>
